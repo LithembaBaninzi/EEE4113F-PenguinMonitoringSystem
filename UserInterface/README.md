@@ -1,3 +1,3 @@
-### This folder contains folders for the backend code and the front end code 
+### This folder contains folders used for the interface of the Penguin Monitoring system 
 
 By Lithemba 
