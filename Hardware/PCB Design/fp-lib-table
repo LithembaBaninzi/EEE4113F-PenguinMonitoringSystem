@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "RASPBERRY_PI_ZERO_2_W")(type "KiCad")(uri "C:/Users/friso/OneDrive/Documents/Mechatronics/2025/EEE4113F/Assignments/Hardware Design/KiCAD/Libraries/RASPBERRY_PI_ZERO_2_W")(options "")(descr ""))
+  (lib (name "LM2596")(type "KiCad")(uri "C:/Users/friso/OneDrive/Documents/Mechatronics/2025/EEE4113F/Assignments/Hardware Design/KiCAD/Libraries/LM2596")(options "")(descr ""))
+  (lib (name "HX711")(type "KiCad")(uri "C:/Users/friso/OneDrive/Documents/Mechatronics/2025/EEE4113F/Assignments/Hardware Design/KiCAD/Libraries/HX711")(options "")(descr ""))
+)
