@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Monitoring System - Reports</title>
+    <link rel="stylesheet" href="reports.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <div class="logo-circle">P</div>
+        Penguin Monitoring System
+      </div>
+      <div class="nav-tabs">
+        <a href="index.html" class="tab">Dashboard</a>
+        <a href="penguin-details.html" class="tab">Penguin Details</a>
+        <a href="reports.html" class="tab active">Reports</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-label">Total Penguins</div>
+            <div class="stat-value">16</div>
+          </div>
+          <div class="stat-icon penguins-icon">
+            <i class="fas fa-user-group"></i>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-label">Avg. Weight</div>
+            <div class="stat-value">5.7 kg</div>
+          </div>
+          <div class="stat-icon weight-icon">
+            <i class="fas fa-scale-balanced"></i>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-label">Lightest Penguin</div>
+            <div class="stat-value">PNG-002</div>
+            <div class="weight-value">3.2 kg</div>
+            <div class="stat-label">Heaviest Penguin</div>
+            <div class="stat-value">PNG-001</div>
+            <div class="weight-value heavy">6.3 kg</div>
+          </div>
+          <div class="stat-icon extremes-icon">
+            <i class="fas fa-arrow-down-up-across-line"></i>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-label">Alerts</div>
+            <div class="stat-value">1</div>
+            <div class="alert-message">Abnormal readings detected</div>
+          </div>
+          <div class="stat-icon alert-icon">
+            <i class="fas fa-circle-exclamation"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label for="penguin-id">Penguin ID</label>
+          <div class="select-wrapper">
+            <select id="penguin-id">
+              <option selected>All Penguins</option>
+              <option>PNG-001</option>
+              <option>PNG-002</option>
+              <option>PNG-003</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label for="anomaly-status">Anomaly Status</label>
+          <div class="select-wrapper">
+            <select id="anomaly-status">
+              <option selected>All Status</option>
+              <option>Normal</option>
+              <option>Overweight</option>
+              <option>Underweight</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label for="time-period">Time Period</label>
+          <div class="select-wrapper">
+            <select id="time-period">
+              <option selected>Day</option>
+              <option>Week</option>
+              <option>Month</option>
+              <option>Year</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="report-header">
+        <h2>Penguin Records</h2>
+        <div class="export-buttons">
+          <button class="export-btn" id="csv-export">
+            <i class="fas fa-file-csv"></i> CSV
+          </button>
+          <button class="export-btn" id="excel-export">
+            <i class="fas fa-file-excel"></i> Excel
+          </button>
+          <button class="export-btn" id="pdf-export">
+            <i class="fas fa-file-pdf"></i> PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table id="penguin-table">
+          <thead>
+            <tr>
+              <th class="checkbox-col">
+                <label class="checkbox-container select-all-container">
+                  <input type="checkbox" id="select-all-checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </th>
+              <th>
+                <div class="th-content">
+                  <span>Penguin ID</span>
+                </div>
+              </th>
+              <th>Last Seen</th>
+              <th>Current Weight</th>
+              <th>Avg Weight (7d)</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be populated by JavaScript -->
+          </tbody>
+        </table>
+        <div class="table-footer">
+          <span id="records-count">Showing 0 of 0 penguins</span>
+          <span id="selected-count"></span>
+        </div>
+      </div>
+    </main>
+
+    <script src="reports.js"></script>
+  </body>
+</html>
