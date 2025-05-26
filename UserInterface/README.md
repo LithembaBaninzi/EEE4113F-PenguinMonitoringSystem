@@ -27,7 +27,7 @@ The user interface acts as the main point of interaction between researchers and
 | Deployment   | Can run locally or connect to backend server |
 
 ## 📂 Folder Structure
-...bash
+```bash
 UserInterface/
 ├── Frontend/
 │   ├── index.html               # Main dashboard page
@@ -39,10 +39,14 @@ UserInterface/
 │   ├── script.js                # Dashboard functionality
 │   ├── penguin-details.js       # Penguin Details page functionality
 │   └── reports.js               # Report page functionality
+├── UI-Images/
+│   ├── Dashboard.png            # Main dashboard image
+|   ├── PenguinDetails.png       # Individual penguin profile image
+|   └── Report.png               # Data analytics and reporting image
 ├── Backend/
 │   └── main.py                  # Flask python code(API's)
 └── README.md                    # This file
-...
+```
 
 ## 🚀 Getting Started
 
