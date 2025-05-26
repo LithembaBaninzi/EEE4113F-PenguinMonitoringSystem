@@ -27,8 +27,9 @@ The user interface acts as the main point of interaction between researchers and
 | Deployment   | Can run locally or connect to backend server |
 
 ## 📂 Folder Structure
-UserInterface/
-├── Frontend/
+
+UserInterface/..
+├── Frontend/..
 │   ├── index.html               # Main dashboard page
 |   ├── penguin-details.html     # Individual penguin profile page
 |   ├── reports.html             # Data analytics and reporting page
@@ -61,12 +62,14 @@ You can serve the UI using any static web server (e.g. VS Code Live Server exten
 python -m http.server 3000
 
 ### 3. Environment Configuration
-Ensure all JavaScript files point to the correct backend URL:
-      ...const backendUrl = "https://your-server-address/api";
-.Update all instances of backendUrl in the JS files (dashboard.js, penguin-details.js, etc).
+Ensure all JavaScript files point to the correct backend URL:..
+      const backendUrl = "https://your-server-address/api";
+
+Update all instances of backendUrl in the JS files (dashboard.js, penguin-details.js, etc).
 
 ### 🤝 Contributions
-.Contributions are welcome! Please open issues or pull requests to propose changes or improvements.
+
+Contributions are welcome! Please open issues or pull requests to propose changes or improvements.
 
 ### Developed by Lithemba
 
